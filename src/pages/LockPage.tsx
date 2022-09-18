@@ -29,122 +29,126 @@ export const LockPage = () => {
     }
 
     return (
-      <Flex
-        flexDirection='column'
-        w='100wh'
+      <Center
+        w='100vw'
         h='100vh'
-        justifyContent='center'
-        alignItems='center'
       >
-        <Box
-          p='1rem'
-          background='white'
-          boxShadow='md'
-          maxWidth='60%'
+        <Flex
+          flexDirection='column'
+          justifyContent='center'
+          alignItems='center'
         >
-          <Stack 
-            spacing={6}
+          <Box
+            p='1rem'
+            background='white'
+            boxShadow='md'
+            maxWidth='60%'
+            marginX='auto'
           >
-            <Heading>
-              Tanggal Penting
-            </Heading>
-            <Stack
-              direction='row'
-              spacing={4}
+            <Stack 
+              spacing={6}
             >
-              <Input 
-                type="number" 
-                placeholder="Day" 
-                onChange={e => setDay(e.target.value)}
-                onKeyPress={(event) => {
-                  if (!/[0-9]/.test(event.key)) {
-                    event.preventDefault();
-                  }
-                }}
-                maxWidth='20%'
-              />
-              <Select placeholder="Month" onChange={e => setMonth(e.target.value)}>
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="Desember">Desember</option>
-              </Select>
-              <Input type="number" placeholder="Year" onChange={e => setYear(e.target.value)} 
-                onKeyPress={(event) => {
+              <Heading>
+                Tanggal Penting
+              </Heading>
+              <Stack
+                direction='row'
+                spacing={4}
+              >
+                <Input 
+                  type="number" 
+                  placeholder="Day" 
+                  onChange={e => setDay(e.target.value)}
+                  onKeyPress={(event) => {
                     if (!/[0-9]/.test(event.key)) {
                       event.preventDefault();
                     }
-                }}
-                maxWidth='20%'
-              />
-            </Stack>
-            <Box>
-              <Center>
-                <HStack
-                  spacing={4}
-                >
-                  <Input 
-                    type="number" 
-                    placeholder="Hour" 
-                    onChange={e => setHour(e.target.value)}
-                    onKeyPress={(event) => {
+                  }}
+                  maxWidth='20%'
+                />
+                <Select placeholder="Month" onChange={e => setMonth(e.target.value)}>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="Desember">Desember</option>
+                </Select>
+                <Input type="number" placeholder="Year" onChange={e => setYear(e.target.value)} 
+                  onKeyPress={(event) => {
                       if (!/[0-9]/.test(event.key)) {
                         event.preventDefault();
                       }
-                    }}
-                  />
-                  <Input 
-                    type="number" 
-                    placeholder="Minute" 
-                    onChange={e => setMinute(e.target.value)}
-                    onKeyPress={(event) => {
-                      if (!/[0-9]/.test(event.key)) {
-                        event.preventDefault();
-                      }
-                    }}
-                  />
-                </HStack>
-              </Center>
-            </Box>
-            <Stack
-              direction='column'
-              spacing='1'
-            >
-              <Button 
-                onClick={Submit}
-                background='#009fe3'
-                borderRadius={0}
-                color='white'
-                _hover={{
-                  color: 'white',
-                  background: '#027eb3'
-                }}
-                _active={{
-                  color: 'white',
-                  background: '#015b82'
-                }}
-              >
-                Submit
-              </Button>
-              <Box
-                fontSize='9pt'
-                color='red'
-              >
-                {
-                  fail ? 'Input salah!' : null
-                }
+                  }}
+                  maxWidth='20%'
+                />
+              </Stack>
+              <Box>
+                <Center>
+                  <HStack
+                    spacing={4}
+                  >
+                    <Input 
+                      type="number" 
+                      placeholder="Hour" 
+                      onChange={e => setHour(e.target.value)}
+                      onKeyPress={(event) => {
+                        if (!/[0-9]/.test(event.key)) {
+                          event.preventDefault();
+                        }
+                      }}
+                    />
+                    <Input 
+                      type="number" 
+                      placeholder="Minute" 
+                      onChange={e => setMinute(e.target.value)}
+                      onKeyPress={(event) => {
+                        if (!/[0-9]/.test(event.key)) {
+                          event.preventDefault();
+                        }
+                      }}
+                    />
+                  </HStack>
+                </Center>
               </Box>
+              <Stack
+                direction='column'
+                spacing='1'
+              >
+                <Button 
+                  onClick={Submit}
+                  background='#009fe3'
+                  borderRadius={0}
+                  color='white'
+                  _hover={{
+                    color: 'white',
+                    background: '#027eb3'
+                  }}
+                  _active={{
+                    color: 'white',
+                    background: '#015b82'
+                  }}
+                >
+                  Submit
+                </Button>
+                <Box
+                  fontSize='9pt'
+                  color='red'
+                >
+                  {
+                    fail ? 'Input salah!' : null
+                  }
+                </Box>
+              </Stack>
             </Stack>
-          </Stack>
-        </Box>
-      </Flex>
+          </Box>
+        </Flex>
+      </Center>
     );
 }

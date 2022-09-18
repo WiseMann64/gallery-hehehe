@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css'
-import { ComingSoon } from './pages/ComingSoon';
 import { LockPage } from './pages/LockPage';
 import { View } from './pages/View';
 
@@ -13,7 +12,7 @@ function App() {
           path='/'
           key='/'
           element={
-            <ComingSoon />
+            <LockPage />
           }
         />
         <Route
@@ -22,14 +21,6 @@ function App() {
           key='*'
           element={
             <Navigate to={'/'} />
-          }
-        />
-        <Route 
-          caseSensitive
-          path='/lock'
-          key='/lock'
-          element={
-            <LockPage/>
           }
         />
         <Route
