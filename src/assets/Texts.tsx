@@ -7,7 +7,7 @@ type SingleCardProps = {
 export const Texts: SingleCardProps[] = [
     {
         title: "September 2021",
-        image: "spt.jpg",
+        image: "gallery-hehehe/spt.jpg",
         desc: [
             "19th September of 2021, when our journey started",
             "Our date before getting into this relationship was at Armor Kopi",
@@ -16,7 +16,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "October 2021",
-        image: "oct.jpg",
+        image: "gallery-hehehe/oct.jpg",
         desc: [
             "Many memorable things happened in October",
             "Such as D'Pakar and Gang Nikmat date"
@@ -24,7 +24,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "November 2021",
-        image: "nov.jpg",
+        image: "gallery-hehehe/nov.jpg",
         desc: [
             "IKEA Date was planned but sadly it didn't happen in November",
             "But don't forget the date at Jardin Cafe, we moved seat because of rain lol",
@@ -34,7 +34,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "Desember 2021",
-        image: "des.jpg",
+        image: "gallery-hehehe/des.jpg",
         desc: [
             "FIRST PHOTOBOOTH!",
             "It is hard tho doing the poses for photobooth for the first time",
@@ -43,7 +43,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "January 2022",
-        image: "jan.jpg",
+        image: "gallery-hehehe/jan.jpg",
         desc: [
             "Finding coffee and ends up at Upnormal Cihampelas",
             "The coffee was good and so does our time together"
@@ -51,7 +51,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "February 2022",
-        image: "feb.jpg",
+        image: "gallery-hehehe/feb.jpg",
         desc: [
             "After wondering which classmate'll marry first,",
             "The answer is Erika!",
@@ -60,7 +60,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "March 2022",
-        image: "mar.jpg",
+        image: "gallery-hehehe/mar.jpg",
         desc: [
             "Last month that the fuel was cheap, we travelled so much!",
             "From Cikapundung, BEC, BaBe, to find digital camera",
@@ -70,7 +70,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "April 2022",
-        image: "apr.jpg",
+        image: "gallery-hehehe/apr.jpg",
         desc: [
             "Kosambi Kosambi Kosambi!",
             "We visited Hallway more frequently than other months, maybe?",
@@ -79,7 +79,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "May 2022",
-        image: "may.jpg",
+        image: "gallery-hehehe/may.jpg",
         desc: [
             "Finally our long awaited IKEA date!",
             "The food was good, trip was good, everything was good",
@@ -88,7 +88,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "June 2022",
-        image: "jun.jpg",
+        image: "gallery-hehehe/jun.jpg",
         desc: [
             "Sudden Ranca Upas date, with so many photos taken",
             "Also dyeing your hair was so much fun (sadly I can't do that properly :\")",
@@ -97,7 +97,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "July 2022",
-        image: "jul.jpg",
+        image: "gallery-hehehe/jul.jpg",
         desc: [
             "One of your busiest month, I think",
             "We didn't go out together much this month",
@@ -106,7 +106,7 @@ export const Texts: SingleCardProps[] = [
     },
     {
         title: "August 2022",
-        image: "aug.jpg",
+        image: "gallery-hehehe/aug.jpg",
         desc: [
             "Our second photobooth, lot better than first one IMO",
             "But still, my poses are still awkward, need to learn much more lol"
